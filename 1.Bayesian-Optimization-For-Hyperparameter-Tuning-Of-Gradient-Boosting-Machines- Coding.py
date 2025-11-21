@@ -136,7 +136,6 @@ bo_test_rmse = np.sqrt(mean_squared_error(y_test, y_pred_bo))
 bo_test_r2 = r2_score(y_test, y_pred_bo)
 
 print("\nResults Comparison")
-print("=" * 50)
 
 results_comparison = {
     'Model': ['Baseline (Default)', 'Random Search', 'Bayesian Optimization'],
@@ -216,3 +215,4 @@ for param, value in random_search.best_params_.items():
 print("\nBayesian Optimization Best Parameters:")
 for param, value in best_params.items():
     print(f"  {param}: {value}")
+
